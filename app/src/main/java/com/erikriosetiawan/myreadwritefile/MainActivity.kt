@@ -65,7 +65,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
 
     private fun saveFile() {
         when {
-            binding.editTitle.text.toString().isNotEmpty() -> Toast.makeText(
+            binding.editTitle.text.toString().isEmpty() -> Toast.makeText(
                 this,
                 "Title harus diisi terlebih dahulu",
                 Toast.LENGTH_SHORT
